@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Home from "./screens/Home";
+import RoutesApp from "./routes";
 
 function App() {
   return (
-      <Home />
+      <RoutesApp />
   );
 }
 

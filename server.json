@@ -29,8 +29,7 @@
   ],
   "plants": [
     {
-      "id": 5,
-      "name": "Espada São Jorge",
+      "name": "test 2",
       "about": "O aroma reduz os níveis de ansiedade e seu cheiro ajudar na qualidade do sono e a produtividade durante o dia.",
       "water_tips": "Regue o solo ao redor. Regue 1 vez no dia.",
       "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/5.svg",
@@ -41,7 +40,8 @@
       "frequency": {
         "times": 1,
         "repeat_every": "day"
-      }
+      },
+      "id": 5
     },
     {
       "id": 6,
@@ -102,18 +102,19 @@
       }
     },
     {
-      "id": 10,
-      "name": "Hortênsia",
+      "name": "mato",
       "about": "A hortênsia é uma planta rústica e se adapta a diferentes tipos de solos.",
-      "water_tips": "Mantenha a terra sempre húmida sem encharcar. Regue 1 vez no dia.",
-      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/2.svg",
+      "water_tips": "Regue o solo ao redor. Regue 1 vez no dia.",
+      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/5.svg",
       "environments": [
-        "bathroom"
+        "bedroom",
+        "living_room"
       ],
       "frequency": {
         "times": 1,
         "repeat_every": "day"
-      }
+      },
+      "id": 10
     }
   ]
 }

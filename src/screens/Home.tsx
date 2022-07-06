@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import api from "../services/api";
 
-type PlatsProps = {
+export type PlantsProps = {
   id: string;
   name: string;
   about: string;
 };
 
 const Home: React.FC = () => {
-  const [plants, setPlants] = useState<PlatsProps[]>([]);
+  const [plants, setPlants] = useState<PlantsProps[]>([]);
 
   async function getPlants() {
-    const response = await api.get<PlatsProps[]>("/plants");
+    const response = await api.get<PlantsProps[]>("/plants");
 
     setPlants(response.data);
   }
@@ -35,6 +36,7 @@ const Home: React.FC = () => {
           <li key={p.id}>
             <strong>{p.name}: </strong>{" "}
             <button onClick={() => delPlant(p.id)}>DELETE</button>
+            <Link to={`details/${p.id}`}>Editar</Link>
             <br />
             <br />
           </li>
